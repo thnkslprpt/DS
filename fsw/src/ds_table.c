@@ -513,7 +513,6 @@ bool DS_TableVerifyDestFileEntry(DS_DestFileEntry_t *DestFileEntry, uint8 TableI
 int32 DS_TableVerifyFilter(const void *TableData)
 {
     DS_FilterTable_t *FilterTable = (DS_FilterTable_t *)TableData;
-    const char *      DescResult  = "OK";
     int32             Result      = CFE_SUCCESS;
     int32             i           = 0;
 
