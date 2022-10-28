@@ -551,8 +551,8 @@ int32 DS_TableVerifyFilter(const void *TableData)
     ** Note that totals include each table entry plus the descriptor
     */
     CFE_EVS_SendEvent(DS_FLT_TBL_EID, CFE_EVS_EventType_INFORMATION,
-                      "Filter table verify results: desc text = %s, good entries = %d, bad = %d, unused = %d",
-                      DescResult, (int)CountGood, (int)CountBad, (int)CountUnused);
+                      "Filter table verify results: good entries = %d, bad = %d, unused = %d", (int)CountGood,
+                      (int)CountBad, (int)CountUnused);
 
     return Result;
 }
