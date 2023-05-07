@@ -142,7 +142,7 @@ void DS_SetAppStateCmd(const CFE_SB_Buffer_t *BufPtr)
 
         DS_AppData.CmdAcceptedCounter++;
 
-        CFE_EVS_SendEvent(DS_ENADIS_CMD_EID, CFE_EVS_EventType_DEBUG, "APP STATE command: state = %d",
+        CFE_EVS_SendEvent(DS_ENADIS_CMD_EID, CFE_EVS_EventType_INFORMATION, "APP STATE command: state = %d",
                           DS_AppStateCmd->EnableState);
     }
 }
