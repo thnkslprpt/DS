@@ -152,7 +152,7 @@
 #error DS_APP_PIPE_DEPTH must be defined!
 #elif (DS_APP_PIPE_DEPTH < 1)
 #error DS_APP_PIPE_DEPTH cannot be less than 1!
-#elif (DS_APP_PIPE_DEPTH > OS_QUEUE_MAX_DEPTH)
+#elif (DS_APP_PIPE_DEPTH < OS_QUEUE_MAX_DEPTH)
 #error DS_APP_PIPE_DEPTH cannot exceed OS_QUEUE_MAX_DEPTH!
 #endif
 
